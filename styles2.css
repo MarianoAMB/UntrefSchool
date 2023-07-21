@@ -1,0 +1,120 @@
+/* Estilos generales */
+
+:root {
+  --color-acento: #FC7300;
+  --color-cta: #1F8A70;
+  --color-menu: #00425A;
+  --color-texto: #181823;
+  --color-fondo: #EFF5F5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--color-menu);
+    color: var(--color-acento);
+    padding: 1.25rem 2.25rem 1.25rem 2.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+    .home {display: inherit;}
+
+    nav ul {
+      display: none;
+      background-color: var(--color-fondo);
+      padding: 10px;
+      border-radius: 1.5rem;
+      margin-bottom: 0;
+    }
+    
+    nav ul li a {
+      position: relative; 
+      color: var(--color-cta);
+      text-decoration: none;
+      padding: 10px;
+      font-size: 14px;
+      background-image: linear-gradient(to right, var(--color-cta) 50%, var(--color-acento) 50%);
+      background-size: 200% 100%;
+      background-position: right;
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      transition: background-position 0.3s linear;
+    }
+  
+    nav ul li a:hover {
+      background-position: left;
+    }
+  
+  /* Main */
+  main {
+    padding: 20px;
+  }
+  .h1-responsive {color: var(--color-acento)}
+
+  .btn-primary {margin: 1.5rem;}
+
+  .La {margin-bottom: 0.5rem;}
+
+  .Lab {margin-top: 1.5rem;
+        margin-bottom: 0.5rem;}
+  
+  /* Footer */
+  footer {
+    background-color: #00425A;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+  }
+  
+  .redes-sociales a {
+    color: #FFFFFF;
+    margin-right: 10px;
+  }
+  
+  .redes-sociales a i {
+    font-size: 24px;
+  }
+  
+  .nombre-instituto {
+    font-family: 'Belanosima', cursive;
+    font-size: 18px;
+  }
+  
+  .contactos {
+    font-size: 14px;
+  }
+
+
+  @media (min-width: 460px) {
+
+    .home {display: none;}
+
+    nav ul {display: flex;
+      justify-content: space-between;
+      list-style: none;
+      align-items: center;}
+    }
+  

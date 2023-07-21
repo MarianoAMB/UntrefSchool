@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto - UntrefSchool</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <header>
+    <span><img src="/img/Logo.jpg" alt=""></span>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+    <div class="home">
+      <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="var(--color-acento)" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+<!--Section: Contact v.2-->
+<section class="mb-4">
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contactanos</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">No dudes en dejarnos tu mensaje ante cualquier consulta, inquietud, sugerencia o reclamo.</p>
+
+  <div class="row justify-content-center"> <!-- Agrega la clase "justify-content-center" para centrar horizontalmente la columna -->
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="https://formsubmit.co/823d8262179e363c5d1a674b528d315b" method="POST" > <!-- Agrega la clase "text-center" para centrar los campos y etiquetas de texto -->
+              <!--Grid row-->
+              <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <label for="name" class="La">Nombre y Apellido</label>
+                          <input type="text" id="name" name="name" class="form-control" required>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <label for="email" class="La">E-mail</label>
+                          <input type="email" id="email" name="email" class="form-control" required>
+
+                      </div>
+                  </div>
+                  <!--Grid column-->
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <label for="subject" class="Lab">Asunto</label>
+                          <input type="text" id="subject" name="subject" class="form-control" required>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-12">
+                      <div class="md-form">
+                          <label for="message" class="Lab">Mensaje</label>
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" required></textarea>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+              
+          <div class="text-center text-md-left">
+            <input type="submit" class="btn btn-primary" value="Envíar"/>
+          </div>
+          <div class="status"></div>
+          </form>
+
+      </div>
+      <!--Grid column-->
+  </div>
+</section>
+
+
+</section>
+<!--Section: Contact v.2-->
+  </main>
+
+<div class="container">
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<div class="col-md-4 d-flex align-items-center">
+<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+<svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+</a>
+<span class="mb-3 mb-md-0 text-muted">© 2023 Company, Inc</span>
+</div>
+<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+<li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+<li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+<li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+</ul>
+</footer>
+</div>
+
+<!-- <footer>
+  <div class="redes-sociales">
+    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+  </div>
+  <div class="nombre-instituto">
+    UntrefSchool
+  </div>
+  <div class="contactos">
+    Teléfono: +1234567890 | Email: info@untrefschool.com
+  </div>
+</footer> -->
+
+</body>
+</html>

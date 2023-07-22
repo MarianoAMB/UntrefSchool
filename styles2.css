@@ -79,16 +79,14 @@
   footer {
     background-color: #00425A;
     color: #FFFFFF;
-    padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
   }
   
+  .redes-sociales {margin-top: 15px}
+
   .redes-sociales a {
     color: #FFFFFF;
     margin-right: 10px;
@@ -104,6 +102,7 @@
   }
   
   .contactos {
+    margin-top: 15px;
     font-size: 14px;
   }
 
@@ -118,3 +117,8 @@
       align-items: center;}
     }
   
+    @media (min-width: 550px){ 
+      footer.footer{
+        flex-direction: row;
+      }
+    }

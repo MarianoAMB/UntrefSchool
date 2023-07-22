@@ -106,35 +106,14 @@
     
   .Hamb {display: inherit;}
 
-  .banner {
-    position: relative;
-    background-image: url(/img/Banner.jpg);
-    width: 100%;
-    height: 30rem;
-    background-size: cover;
-    background-position: center;
-    }
-
-  .TBanner {
-    position: absolute;
-    font-size: 2.5rem;
-    font-weight: 700;
-    bottom: 20px;
-    right: 20px;
-    color: var(--color-fondo);
-    text-shadow: var(--color-menu) 3px 3px 5px;
-    justify-content: right;
-    text-align: right;
-  }
-
   /* Main */
   main {
     display: grid;
     gap: 20px;
     justify-content: center;
-    margin: 2em calc(5vw + 20px)
+    margin: 2em calc(5vw + 20px);
   }
-  
+
   /* Secciones */
   section {
     color: var(--color-texto);
@@ -169,19 +148,31 @@
   #ultimas-noticias {
     grid-area: ultimas-noticias;
   }
+
+  .prop {display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+  }
   
-  hr {grid-area: hr;}
+  .card {width: 30%;
+    height: 30%;
+    font-size: 14px;
+    margin-top: 0;
+    }
+
+  .card img {width: 100%;}
 
   .foto img {
     width: 100%;
   }
   /* Footer */
   footer {
-    background-color: var(--color-menu);
-    color: var(--color-acento);
-    padding: 20px;
+    background-color: #00425A;
+    color: #FFFFFF;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -208,24 +199,44 @@
   @media (min-width: 1366px) and (max-width: 1920px) {  
     .foto img {
     width: 20rem;
-  }}
+  }
+  }
 
   @media (min-width: 960px) and (max-width: 1366px) {  
     .foto img {
     width: 30rem;
-  }}
+  }
 
+  }
+
+  @media (max-width:960px){
+    .prop {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+  .card {width: 100%;
+  }
+
+  }
   
   @media (min-width: 851px) and (max-width: 960px) {  
     .foto img {
     width: 25rem;
-  }}
+  }
+}
 
   @media (min-width: 768px) and (max-width: 850px) {  
     .foto img {
     width: 20rem;
-  }}
+  }
+}
 
+@media (min-width: 550px){ 
+  footer.footer{
+    flex-direction: row;
+  }
+}
 
   @media (min-width: 768px) {
     /* Tablet y Desktop */
@@ -254,12 +265,7 @@
             }
     .foto{grid-area: foto;}
     .texto{grid-area: texto;}
-
-    /* .TBanner{font-size: 3.5rem;
-      right: 30px;
-      bottom: 30px;} */
-  }
-
+          }
   
   @media (min-width: 320px) and (max-width: 767px) {
     /* Mobile */

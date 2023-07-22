@@ -117,7 +117,7 @@
       align-items: center;}
     }
   
-    @media (min-width: 550px){ 
+    @media (min-width: 570px){ 
       footer.footer{
         flex-direction: row;
       }
